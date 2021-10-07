@@ -249,7 +249,7 @@ fieldset{
 .fieldset-inner-group .custom-field .placeholder{
     transition: all 3s ease-in-out;
     font-size: 20px;
-    height: fit-content;
+    height: max-content;
     position: absolute;
     left: 0px;
     bottom: 50%;
