@@ -1,0 +1,168 @@
+#cards{
+    margin: 50px 0 0 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#cards > h3{
+    font-weight: 400;
+    margin: 0 0 40px 0;
+}
+
+#cards > #cards-container{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 1vw;
+    width: auto; /* este parametro se adapta al tamaño de la imagen que siempre es proporcional */
+    max-width: 1150px; /* este es el unico parametro que regula el ancho de todo el elemento */
+    height: auto;
+}
+
+#cards > #cards-container > .card{
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+#cards > #cards-container > .card > .image-card-container{
+    color: white;
+    position: relative;
+    width: 100%;
+    height: auto; /* este parametro 'auto' permite que la imagen se adapte a las nuevas dimensiones */
+    display: flex;
+    overflow: hidden;
+}
+
+#cards > #cards-container > .card > .image-card-container > .gradient{
+    transition: transform .3s;
+}
+
+#cards > #cards-container > .card > .image-card-container > .gradient::after{
+    content:'';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    background: linear-gradient(4deg, rgba(2, 0, 36, 0.623) 32%, rgba(0,241,255,0) 60%);
+}
+
+
+#cards > #cards-container > .card > .image-card-container > .gradient > img{
+    width: 100%;
+    height: 100%;
+}
+
+#cards > #cards-container > .card > .image-card-container > .gradient:hover{
+    transform: scale(1.1);
+}
+
+#cards > #cards-container > .card > .image-card-container > .lettering{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    text-align: left;
+    
+}
+
+#cards > #cards-container > .card > .image-card-container > .lettering > h2{
+    margin: 0 0 0 0;
+    font-size: 24px;
+}
+
+#cards > #cards-container > .card > .image-card-container > .lettering > h5{
+    margin: 0 0 2px 0;
+    padding: 0;
+}
+
+
+#cards > #cards-container > .card > .second-card-group{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #343E5B;
+}
+
+#cards > #cards-container > .card > .second-card-group > .card-info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#cards > #cards-container > .card > .second-card-group > .card-info > h5{
+    margin: 0 0 0 10px;
+    top: 54%;
+    left: 5%;
+}
+
+#cards > #cards-container > .card > .second-card-group > .card-info > h2{
+    margin: 0 0 0 10px;
+    top: 65%;
+    left: 5%;
+    font-size: 25px;
+}
+
+#cards > #cards-container > .card > .second-card-group > .material-icons{
+    color: red;
+    font-size: 35px;
+    margin: 0 10px 0 0 ;
+}
+
+#white-button{
+    cursor: pointer;
+    transition: 0.3s;
+    color: #343E5B; 
+    background-color: #ffffff;
+    border: 2px solid #343E5B;
+    width: auto;
+    height: 50px;
+    display: flex;
+    padding: 0 30px 0 30px;
+    margin: 40px 0 80px 0;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 6px;
+    letter-spacing: 1px;
+}
+
+#white-button:hover{
+    background-color: #d8d8d8;
+}
+
+@media all and (max-width: 1025px){
+    #cards > #cards-container{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto ;
+        width: 80%;
+        gap: 2.5vw;
+    }   
+}
+
+@media all and (max-width: 600px){
+    #cards > #cards-container{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, auto) ; 
+        gap: 2.5vw;
+    }
+
+    #cards > h1{
+        font-size: 25px;
+    }
+
+    #cards > h3{
+        font-size: 15px;
+    }
+
+}
