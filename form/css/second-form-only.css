@@ -1,0 +1,252 @@
+.second-form-inside{
+    width: 90vw;
+    height: auto;
+    color: #343E5B;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    margin: 7px 0 0 0;
+    padding: 0 18px 0 18px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: none;
+    align-items: center;
+}
+
+.second-form-inside > .form-body > .horizontal-divisor{
+    background-color: #cccccc;
+    height: .5px;
+    width: 100%;
+    margin: 0 40px 5px 40px;
+}
+
+.form-body, #input-holder{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-body{
+    align-items: left;   
+}
+
+.first-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 6px 0 6px 0;
+}
+
+.second-form-inside > .first-container > h4 {
+    margin: 0px 0px 0px 0px;
+    color: #343E5B;
+}
+
+.second-form-inside > .form-body > #radio-buttons-group-two{
+    justify-content: left;
+    display: flex;
+    width: 100%;
+    margin: 10px 0 30px 0;
+}
+
+.second-form-inside > .form-body > #radio-buttons-group-two > li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#radio-buttons-group-two li a{
+    margin-left: 25px;    
+}
+
+#radio-buttons-group-two li label{
+    margin-right: 25px;    
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #343E5B;
+}
+
+input[id*='radio-button']{
+    width: 18px;
+    height: 18px;
+    margin: 0px;
+}
+
+#content-table{
+    display: grid;
+    position: relative;
+    background-color: rgb(207, 207, 207);
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 15vh 10vh;
+    align-items: center;
+    border: 0.5px solid rgb(207, 207, 207);
+    gap: 0.8px;
+    width: 100%;
+}
+
+.swap{
+    position: absolute;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+    background-color: #343E5B;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: calc(50% - 3.5px);
+    top: 25%;
+}
+
+.swap > i{
+    color: white;
+    font-size: 1.0625rem;
+    margin: 0;
+}
+
+#content-table > .content-table-cell{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+}
+
+#content-table > .content-table-cell > *{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#content-table > .content-table-cell > h2{
+    font-weight: 500;
+    font-size: 25px;
+    color:#343E5B;
+}
+
+#content-table > .content-table-cell > p{
+    font-size: 14px;
+    color: #8a8a8a;
+}
+
+#content-table > .content-table-cell > h4{
+    font-weight: 500;
+    font-size: 15px;
+    color: #343E5B;
+}
+
+#content-table > .content-table-cell > h3{
+    font-weight: 600;
+    font-size: 14px;
+    color:#343E5B;
+}
+
+#prom-code-second-form {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 40px;
+    width: auto;
+}
+
+#prom-code-second-form img{
+    width: 14px;
+    height: 14px;
+    margin-top: 3px;
+    margin: 0 6px 0 0;
+}
+
+#prom-code-second-form a{
+    color: #83868f;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.form-button-second-form{
+    cursor: pointer;
+    transition: 0.3s;
+    color: white; 
+    background-color: #de0108;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    margin: 20px 0 20px 0;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
+
+.form-button-second-form:hover{
+    background-color: #a10208;
+}
+
+#second-form-links{
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60vw;
+    height: auto;
+    margin: 0 0 20px 0; 
+    cursor: pointer; 
+    }
+
+#second-form-links li{
+    list-style: none;
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 0;
+    padding-left: 0;  
+}
+
+#second-form-links li a {
+    display: flex;
+    height: auto;  
+}
+
+#second-form-links li a h5{
+   margin: 0 0 0 0;
+   font-weight: 400;
+}
+
+#second-form-links li img{
+    width: 13px;
+    padding-left: 3px;
+    display: inline-block;
+}
+
+#second-form-links li a{
+    color: #343E5B;
+
+}
+
+.second-form-text{
+    width: 100%;
+    justify-content: left;
+}
+
+.second-form-text p{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.margin-top-big{
+    margin-top: 45px;
+}
+
+.margin-top-small{
+    margin-top: 35px;
+}
+
+.default-height{
+    height: auto;
+}

@@ -1,0 +1,89 @@
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.margins{
+    margin-right: 8px;
+}
+
+.big-margins{
+    margin-right: 11px;
+    margin-left: 11px;
+}
+
+.no-margins-{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.icon-margin{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.link-container{
+    border-top: 4px solid transparent;
+    height: 71px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    transition: 0.3s;
+    margin-left: 0px;
+}
+
+.link-container:hover{
+    background-color: #bf0006;
+}
+
+.link-container-2{
+    height: 55px;
+    border-top: 4px solid transparent;
+    transition: 0.1s;
+    justify-content: center;
+    margin-left: 40px;
+    margin-left: 0px;
+    
+}
+
+.link-container-2:hover{
+    font-weight: 700;
+}
+
+.link-container-3{
+    border-top: 4px solid transparent;
+    height: 71px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    transition: 0.2s;
+    margin-left: 10px;
+}
+
+.link-container-3:hover{
+    background-color: #bf0006;
+}
+
+/* La linea blanca puede lograrse con estos parametros */
+/* box-shadow: inset 0px 3px #000000 */
+.white-rectangle:hover{
+    border-top: 4px solid white;
+}
+
+.font-400{
+    font-weight: 400;
+}
+
+.font-700{
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 784px){
+    .big-margins{margin-left:0; margin-right: 0;}
+    .link-container-3{margin-left: 0px;}
+}

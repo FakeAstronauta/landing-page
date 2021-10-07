@@ -1,0 +1,440 @@
+form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center; 
+    /* el parametro 'center' actua muy autoritario sobre los elementos con vw, los ajusta al contenido*/
+    flex-direction: column;
+}
+
+.form-inside{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width: 95vw;
+    max-width: 1150px;
+    height: auto;
+    border-radius: 0px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#label-container{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form #label-container ul{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    align-items: flex-end;
+    justify-content: left; 
+}
+
+form #label-container ul li{
+    list-style: none;
+    display: flex;
+    background-color: rgb(231, 231, 231);
+    width: fit-content;
+    align-items: center;
+    justify-content: center;    
+    margin-right: 1px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(231, 231, 231);
+}
+
+form #label-container ul li:hover{
+    background-color: black !important;
+}
+
+form #label-container ul li:hover a {
+    color: white !important;
+}
+
+form #label-container ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 8px 25px 8px 25px;
+}  
+
+.form-header{
+    margin: 15px 0 0 25px;
+    animation: append-animate .3s linear;
+}
+
+#first-group{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px 0 25px;
+    animation: append-animate .3s linear;
+}
+
+#radio-buttons-group{
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: fit-content;
+    height: fit-content;
+}
+
+#radio-buttons-group li{
+    list-style: none;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0px;  
+}
+
+#radio-buttons-group li a{
+    margin-left: 25px;    
+}
+
+#radio-buttons-group li label{
+    margin-right: 25px;    
+    margin-left: 10px;   
+}
+
+#radio-buttons-group li img{
+    width: 11px;
+    height: 11px;
+    padding-left: 3px;
+    display: inline-block;
+}
+
+#radio-buttons-group li a{
+    color: #343E5B;
+}
+
+input[id*='radio-button']{
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+
+}
+
+#prom-code{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 40px;
+    width: auto;
+}
+
+#prom-code-two{
+    display: none;
+    align-items: flex-end;
+    justify-content: left;
+    height: 40px;
+    width: 160px;
+}
+
+#prom-code img, #prom-code-two img{
+    width: 15px;
+    height: 15px;
+    margin-top: 3px;
+    margin: 0 6px 0 0;
+}
+
+#prom-code a, #prom-code-two a{
+    color: #343E5B;
+    text-decoration: none;
+}
+
+#divisor{
+    background-color: rgb(163, 163, 163);
+    width: 0.1px;
+    height: 25px;
+}
+
+/* ================================== */
+
+.button-container{
+    justify-content: right;
+    display: flex;
+    /* width: 100%; */
+}
+
+/* tuve un probleme con 'grid' ya que no acepta un 'min-width' y al hacer zoom el tamaño se distorcionaba */
+
+#form-second-group{
+    position: relative;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-end;
+    padding: 0 25px 27px 25px;
+    animation: append-animate .3s linear;
+    color: #343E5B;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* el ancho de las columnas se establece en el script */
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+@keyframes append-animate {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;	
+    }
+}
+
+.fieldset-inner-group{
+    margin-top: 20px;
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: append-animate .3s linear;
+}
+
+.custom-field{
+    position: relative;
+    font-size: 14px;
+    --field-padding: 12px;  /*a variable is created*/
+    display: inline-block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+}
+
+.custom-field input {
+    border: none;
+    margin-top: 0;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: var(--field-padding);
+    height: 30px;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+}
+
+/* el estilo para el texto por defecto de cada casilla */
+.fieldset-inner-group .custom-field .placeholder{
+    transition: all 3s ease-in-out;
+    font-size: 20px;
+    height: fit-content;
+    position: absolute;
+    left: 0px;
+    bottom: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(100% - (var(--field-padding) * 2));
+    color: #8f8f8f;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: top 0.3s ease, font-size 0.3s ease, color 1s ease;
+}
+
+.fieldset-inner-group .custom-field .material-icons{
+    position: absolute;
+    right:  0%;
+    bottom: 100%;
+    top: 10%;
+    transform: translateY(-50%);
+    color: #343E5B;
+}
+
+/* Se define el color para las casillas */
+.custom-field input {
+    background:
+      linear-gradient(90deg, #222, #222) center bottom/0 0.1em no-repeat,
+      linear-gradient(90deg, #ccc, #ccc) left bottom/100% 0.1em no-repeat,
+      transparent left bottom/100% no-repeat;
+
+    }
+    
+.custom-field input:focus {
+    transition: 0.5s ease;
+    background-size: 100% 0.15em, 100% 0.1em, 100%;
+    background-color: #f3f2f2;
+}
+
+.custom-field input:valid + .placeholder,
+.custom-field input:focus + .placeholder{
+    top: -10px;
+    font-size: 15px;
+    color: #222;
+}
+
+.custom-field .underline{
+    position: absolute;
+    width: 0px;
+    height: 5px;
+    top: calc(85% + 10px);
+    transform: translateY(-50%);
+}
+
+.custom-field:hover > .underline{
+    width: 100%;
+    transition: 0.2s;
+}
+
+legend h3{
+    font-size: 23px;
+}
+
+/* fieldset width */
+
+.first-inputs-width{
+    max-width: 350px;
+}
+
+.second-inputs-width{
+    max-width: 239px;
+}
+
+.third-inputs-width{
+    max-width: 200px;
+}
+
+.standar-inputs-width-medium{
+    max-width: 280px;
+}
+
+.standar-inputs-width-huge{
+    max-width: 430px;
+}
+
+/* margins */
+
+.left-mar{
+    margin-left: 19px;
+}
+
+.right-mar{
+    margin-right: 19px;
+}
+
+.right-mar-big{
+    margin-right: 20px;
+}
+
+.form-button{
+    cursor: pointer;
+    transition: 0.3s;
+    color: white; 
+    background-color: #de0108;
+    width: 180px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+.form-button:hover{
+    background-color: #a10208;
+}
+
+/* Media queries */
+
+@media all and (max-width: 1025px){
+    #form-second-group{
+        display: grid;
+        grid-template-columns: auto auto !important; 
+        grid-template-rows: auto auto !important;
+        gap: 32px;
+        margin: 0 0 30px 0;
+    }
+    .form-inside{height: 100%;}
+    .button-container{width: 100%; height: auto; display: flex; justify-content: right;}
+    form #label-container ul li a{font-size: 14px;}
+    #prom-code-two{display: flex; width: 100%; margin: 0 0 0 61px}
+    #prom-code{display: none;}
+
+    .margin-top{
+        margin: 90px 0 0 0;
+    }
+
+    .margin-top{
+        margin: 90px 0 0 0;
+    }
+
+    .input-big-width{
+        width: 43vw;
+    }
+    
+    .input-medium-width{
+        width: 52vw;
+    }
+
+    .input-small-width{
+        width: 33vw;
+    }
+
+    .join-column{
+        grid-column: 1 / span 2;
+    }
+
+    /* se anula los valores por defecto */
+    
+    .first-inputs-width{
+        max-width: 100%;
+    }
+    
+    .second-inputs-width{
+        max-width: 100%;
+
+    }
+    
+    .third-inputs-width{
+        max-width: 100%;
+    }
+
+    .standar-inputs-width-medium{
+        max-width: 100%;
+    }
+    
+    .standar-inputs-width-huge{
+        max-width: 100%;
+    }
+
+    .right-mar-big{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .second-form-inside{display: block !important}
+    #first-form{display: none !important}
+}

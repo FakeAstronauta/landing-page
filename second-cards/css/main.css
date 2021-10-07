@@ -1,0 +1,140 @@
+#cards-two{
+    margin: 0 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.white-background{
+    background-color: #ffffff;
+}
+
+.soft-gray-background{
+    background-color: #f3f2f2;
+}
+
+#cards-two > h3{
+    font-weight: 400;
+    margin: 0 0 40px 0;
+}
+
+#cards-two > #cards-container{
+    display: flex;
+    width: 95vw;
+    justify-content: center;
+    max-width: 1150px;
+    margin: 0 0 50px 0;
+
+}
+
+
+#cards-two > #cards-container > .card {
+    display: flex; /*este parametro permite que las imagenes se mantengan en el centro al modificarse el 
+    tamano del browser   */
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* esto mantiene la targeta con el mismo ancho */
+    height: auto;
+    background-color: #ffffff;
+    overflow: hidden; /* eso es muy critico, al quitar el 'overflow: hidden' el efecto desaparece de la imagen al centro*/
+}
+
+/* mantiene las imagenes dentro de un marco */
+#cards-two > #cards-container > .card > .r{
+    display: flex; 
+    justify-content: center;
+    width: 100%; /* esto mantiene la targeta con el mismo ancho */
+    height: auto;
+    overflow: hidden; /* eso es muy critico, al quitar el 'overflow: hidden' el efecto desaparece de la imagen al centro*/
+}
+
+
+.outer-shadow{
+    box-shadow: 0 2px 5px -3px rgba(0, 0, 0, 0.19);
+    transition: .4s;
+}
+
+.outer-shadow:hover{
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.19);
+}
+
+#cards-two > #cards-container > .card > .r > img{
+    width: 100%;
+    /* height: 100%; */
+    height: 197px;
+
+    min-width: 383.33px;
+    max-width: 383.33px;
+    transition: transform .3s;
+}
+
+#cards-two > #cards-container > .card > .r > img:hover{
+    transform: scale(1.1);
+}
+
+.margin-cards{
+    margin: 0 20px 0 0;
+}
+
+#cards-two > #cards-container > .card > .second-card-group{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    color: #343E5B;
+}
+
+#cards-two > #cards-container > .card > .second-card-group > .card-info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#cards-two > #cards-container > .card > .second-card-group > .card-info > h2{
+    margin: 20px 20px 10px 20px;
+    top: 65%;
+    left: 5%;
+    font-size: 25px;
+}
+
+#cards-two > #cards-container > .card > .second-card-group > .card-info > p{
+    margin: 0 20px 0 20px;
+    top: 54%;
+    left: 5%;
+}
+
+#cards-two > #cards-container > .card > .second-card-group > .link-group{
+    display: flex;
+    width: auto;
+    align-items: left;
+    margin: 20px 0 30px 20px; 
+}
+
+#cards-two > #cards-container > .card > .second-card-group > .link-group > .material-icons{
+    color: red;
+    font-size: 15px;
+    margin: 3px 0 0 5px;
+    bottom: 0;
+    padding: 0;
+}
+
+@media all and (max-width: 800px){
+    #cards-two > #cards-container{
+        display: block;
+    }
+
+    .margin-cards{
+        margin: 0 0 20px 0;
+    }
+
+    #cards-two > #cards-container > .card > .r > img{
+        max-width: none;
+        height: 100%;
+    }
+     
+}
