@@ -29,15 +29,15 @@ function changeLabelStyle(n){
 // scroll to the form area when click over
 function scrollToForm(n){
     if(n == 0){
-        window.scrollTo(0, 350);
+        window.scrollTo(0, 250);
     }else if(n == 1){
-        window.scrollTo(0, 390);
+        window.scrollTo(0, 250);
     }else if(n == 2){
-        window.scrollTo(0, 400);
+        window.scrollTo(0, 300);
     }else if(n == 3){
-        window.scrollTo(0, 500);
+        window.scrollTo(0, 340);
     }else if(n == 4){
-        window.scrollTo(0, 500);
+        window.scrollTo(0, 380);
     }
 }
 

@@ -218,8 +218,11 @@ header{
     margin-right: 8px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 900px) {
     #prevBtn, #nextBtn{display: none;}
+}
+
+@media only screen and (max-width: 1200px) {
     .big{font-size: 35px;}
     .medium{font-size: 20px;}
     .s{width: 800px}
@@ -230,8 +233,8 @@ header{
     .dots{display: none}
     .text-group-two{margin-left: 0;}
     header{margin-top: 50px;}
-    .big{text-align: center; font-size: 28px;}
-    .medium{text-align: center; font-size: 15px; line-height: 130%; margin: 5   px;}
+    .big{text-align: center; font-size: 28px; line-height: 130%; margin: 15px;}
+    .medium{text-align: center; font-size: 15px; line-height: 130%; margin: 15px;}
     .small{display: none;}
     .button-inside{margin: auto; margin-top: 20px;}
     .text-group{margin-top: 130px;}

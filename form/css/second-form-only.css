@@ -1,5 +1,5 @@
 .second-form-inside{
-    width: 90vw;
+    width: 80%;
     height: auto;
     color: #343E5B;
     background-color: rgb(255, 255, 255);
@@ -35,6 +35,7 @@
     align-items: center;
     width: 100%;
     margin: 6px 0 6px 0;
+    cursor: pointer;
 }
 
 .second-form-inside > .first-container > h4 {
